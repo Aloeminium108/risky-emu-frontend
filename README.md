@@ -32,8 +32,9 @@ Alice fill this in as well please
 ## Authors and Acknowledgment
 
 Primary Lead and Scrum Master - [Aloeminium108](https://github.com/Aloeminium108)
+----------------------------------------------------------------------------------
 Secondary Lead - [BLDubroff](https://github.com/BLDubroff)
-
+----------------------------------------------------------------------------------
 ## Contributing
 
 For major changes, please open an issue first to discuss what you would like to change.
