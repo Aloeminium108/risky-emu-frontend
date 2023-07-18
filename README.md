@@ -12,10 +12,14 @@ Make and share toy programs for the RISC-V instruction set!
 
 ## Technologies Used
 
-> **React** - The front end framework used to create the web application
-> **TypeScript** - Strongly typed, object-oriented, complied programming language used in tandem with JavaScript and JSX to create this project
-> **dotenv** - For environment variable declaration and security
-> **nodemon** - Used to monitor the devlopment of our express based Node.js app
+#### **React** - 
+> The front end framework used to create the web application
+#### **TypeScript** - 
+> Strongly typed, object-oriented, complied programming language used in tandem with JavaScript and JSX to create this project
+#### **dotenv** - 
+> For environment variable declaration and security
+#### **nodemon** - 
+> Used to monitor the devlopment of our express based Node.js app
 
 ## Project Usage
 
