@@ -20,15 +20,49 @@ Make and share toy programs for the RISC-V instruction set!
 > For environment variable declaration and security
 #### **nodemon** - 
 > Used to monitor the devlopment of our express based Node.js app
+#### **risc-v-emulator** -
+> Package created for this project containing the logic for the RISC-V emulator and assembler. [Click here for package homepage](https://github.com/Aloeminium108/risc-v-emulator)
 
 ## Project Usage
 
-Alice fill this in please
+TODO: Write Project Usage section
 
 ## Project Roadmap
 
-Alice fill this in as well please
+### Goals
 
+**Unprivileged RISC-V base instruction set emulation**
+- [x] ~~RV32I~~
+- [ ] RV64I
+
+**RISC-V extensions**
+- [ ] M (Standard Extension for Integer Multiplication and Division)
+- [ ] F (Standard Extension for Single-Precision Floating-Point)
+- [ ] A (Standard Extension for Atomic Instructions)
+  - [ ] Parallelized core emulation
+
+**RISC-V Assembler**
+- [ ] Assembler for RV32I base ISA
+  - [x] ~~Assembly of native instructions~~
+  - [ ] Pseudo-instruction interpreter
+  - [ ] Parse and calculate offsets for labels
+  - [ ] Linking of symbols
+  - [ ] Section directives
+- [ ] Assembler for RV64I base ISA
+- [ ] Assembly of instructions from select extensions
+  - [ ] M
+  - [ ] F
+  - [ ] A
+
+**Program Editor**
+- [ ] Basic text editor
+- [ ] Syntax highlighting
+- [ ] Basic linting
+
+**Program execution view**
+- [ ] Basic view of registers and RAM
+- [ ] Graphical view with memory-mapped I/O
+ 
 ## Authors and Acknowledgment
 
 #### Primary Lead and Scrum Master - [Aloeminium108](https://github.com/Aloeminium108)
