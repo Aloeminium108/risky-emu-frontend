@@ -1,7 +1,7 @@
 import { FunctionComponent, ReactNode, createContext, useEffect, useState } from "react";
 
 export interface User {
-
+  username: string
 }
 
 type CurrentUserContext = {
