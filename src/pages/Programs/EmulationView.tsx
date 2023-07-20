@@ -1,7 +1,9 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 
-export default function EmulationView() {
+const EmulationView: FunctionComponent = () => {
   return (
-    <></>
+    <h1>Home Page</h1>
   )
 }
+
+export default EmulationView
