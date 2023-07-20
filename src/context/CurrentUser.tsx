@@ -6,11 +6,7 @@ export interface User {
 
 export const CurrentUser = createContext<User>({});
 
-type Props = {
-  children: ReactNode
-}
-
-const CurrentUserProvider: FunctionComponent<Props> = (props: Props) => {
+const CurrentUserProvider: FunctionComponent<{ children: ReactNode }> = (props) => {
 
   const [currentUser, setCurrentUser] = useState(null)
     useEffect(() => {
