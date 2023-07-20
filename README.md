@@ -16,6 +16,8 @@ Make and share toy programs for the RISC-V instruction set!
 > The front end framework used to create the web application
 #### **TypeScript** - 
 > Strongly typed, object-oriented, complied programming language used in tandem with JavaScript and JSX to create this project
+#### **Sass** -
+> CSS preprocessor for more concise, modular styling
 #### **dotenv** - 
 > For environment variable declaration and security
 #### **nodemon** - 
