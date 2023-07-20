@@ -13,8 +13,9 @@ export const CurrentUser = createContext<CurrentUserContext>({ currentUser: null
 
 const CurrentUserProvider: FunctionComponent<{ children: ReactNode }> = (props) => {
 
-  const [currentUser, setCurrentUser] = useState<User | null>(null)
-    useEffect(() => {
+  const [currentUser, setCurrentUser] = useState<User | null>(null);
+
+  useEffect(() => {
 
     const getLoggedInUser = async () => {
       let response = await fetch(`${process.env.REACT_APP_SERVER_URL}/authentication/profile`, {
@@ -23,11 +24,11 @@ const CurrentUserProvider: FunctionComponent<{ children: ReactNode }> = (props) 
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
       })
-      let user = await response.json()
-      setCurrentUser(user)
+      let user = await response.json();
+      setCurrentUser(user);
     }
 
-    getLoggedInUser()
+    getLoggedInUser();
   }, [])
 
   return (
