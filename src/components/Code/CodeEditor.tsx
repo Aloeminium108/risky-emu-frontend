@@ -1,23 +1,23 @@
 import React, { FunctionComponent } from "react"
-import { Editor } from "@monaco-editor/react"
+import { Editor, OnChange } from "@monaco-editor/react"
 
 type Props = { 
   editMode: boolean, 
-  program: string[], 
-  setProgram: React.Dispatch<React.SetStateAction<string[]>> 
+  sourceCode: string, 
+  setSourceCode: React.Dispatch<React.SetStateAction<string>> 
 }
 
 const CodeEditor: FunctionComponent<Props> = (props) => {
 
   function handleEditorChange(value: any, event: React.ChangeEvent) {
-    console.log('here is the current model value:', value);
+    props.setSourceCode(value);
   }
 
   return (
     <Editor
-      height="90vh"
-      defaultLanguage="javascript"
-      defaultValue="// some comment"
+      height="80vh"
+      defaultLanguage="plaintext"
+      defaultValue={props.sourceCode}
       onChange={handleEditorChange as any}
     />
   );

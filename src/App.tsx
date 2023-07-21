@@ -19,7 +19,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/account" element={<AccountPage />} />
-          <Route path="/editor" element={<ProgramEditor />} />
+          <Route path="/editor/:program_id" element={<ProgramEditor />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>

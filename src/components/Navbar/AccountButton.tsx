@@ -8,7 +8,7 @@ const AccountButton: FunctionComponent<{ currentUser: User }> = (props) => {
 
   return (
     <div className="nav-button" onClick={() => navigate('/account')}>
-      <h1>{ props.currentUser.username }</h1>
+      <h1>{ props.currentUser? props.currentUser.username : 'Error' }</h1>
     </div>
   );
 }
