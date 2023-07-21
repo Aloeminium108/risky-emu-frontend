@@ -54,7 +54,7 @@ const LoginPage: FunctionComponent = () => {
           <div>
             <label htmlFor="username">Username</label>
             <input
-              type="username"
+              type="text"
               required
               value={credentials.username}
               onChange={e => setCredentials({ ...credentials, username: e.target.value })}

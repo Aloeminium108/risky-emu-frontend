@@ -9,8 +9,6 @@ const ProgramEditor: FunctionComponent = () => {
   const [ binary, setBinary ] = useState<ArrayBuffer>();
   const { program_id } = useParams();
 
-  const [ loading, setLoading ] = useState<boolean>(true);
-
   useEffect(() => {
 
     const getProgram = async () => {
@@ -21,7 +19,6 @@ const ProgramEditor: FunctionComponent = () => {
       console.log({
         title, author, description, source_code, binary
       })
-      console.log(new Uint8Array(binary.data).buffer)
       setSourceCode(source_code)
 
     }
@@ -32,17 +29,18 @@ const ProgramEditor: FunctionComponent = () => {
 
   const postProgram = async () => {
 
-    const binaryArray = new Uint8Array(Assembler.assemble(sourceCode.split(/\r?\n/)));
+    const lines = sourceCode.split(/\r?\n/);
+    console.log(lines)
 
-    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/`, {
-      method: 'POST',
+    const binaryArray = new Uint8Array(Assembler.assemble(lines));
+
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/${program_id}`, {
+      method: 'PUT',
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        title: 'Test Title',
-        description: 'Test Description',
         source_code: sourceCode,
         binary: Array.from(binaryArray)
       })

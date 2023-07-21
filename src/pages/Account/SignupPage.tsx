@@ -54,7 +54,7 @@ const SignupPage: FunctionComponent = () => {
           <div>
             <label htmlFor="username">Username</label>
             <input
-              type="username"
+              type="text"
               required
               value={user.username}
               onChange={e => setUser({ ...user, username: e.target.value })}

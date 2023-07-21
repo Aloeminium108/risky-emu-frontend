@@ -8,6 +8,7 @@ import LoginPage from './pages/Account/LoginPage';
 import SignupPage from './pages/Account/SignupPage';
 import AccountPage from './pages/Account/AccountPage';
 import ProgramEditor from './pages/Programs/ProgramEditor';
+import NewProgramPage from './pages/Programs/NewProgramPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/account" element={<AccountPage />} />
           <Route path="/editor/:program_id" element={<ProgramEditor />} />
+          <Route path="/new/" element={<NewProgramPage />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>
