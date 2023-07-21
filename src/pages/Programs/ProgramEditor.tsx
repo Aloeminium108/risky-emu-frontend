@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react"
 
 const ProgramEditor: FunctionComponent = () => {
+
+  // TODO: Create editor
   return (
-    <h1>Home Page</h1>
+    <main>
+
+    </main>
   )
 }
 

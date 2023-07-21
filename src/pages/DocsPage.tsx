@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react"
 
 const DocsPage: FunctionComponent = () => {
+
+  // TODO: Write up documentation
   return (
-    <h1>Home Page</h1>
+    <main>
+
+    </main>
   )
 }
 

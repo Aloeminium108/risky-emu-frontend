@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react"
 
 const EmulationView: FunctionComponent = () => {
+
+  // TODO: Fire up emulator on the page
   return (
-    <h1>Home Page</h1>
+    <main>
+
+    </main>
   )
 }
 

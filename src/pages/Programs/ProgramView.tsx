@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react"
 
 const ProgramView: FunctionComponent = () => {
+
+  // TODO: Display info about program along with comments
   return (
-    <h1>Home Page</h1>
+    <main>
+
+    </main>
   )
 }
 

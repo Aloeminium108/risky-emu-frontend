@@ -1,8 +1,14 @@
 import React, { FunctionComponent } from "react"
 
 const HomePage: FunctionComponent = () => {
+
+  // TODO: Pull in info about featured programs
+
+  // TODO: Display featured programs
   return (
-    <h1>Home Page</h1>
+    <main>
+
+    </main>
   )
 }
 
