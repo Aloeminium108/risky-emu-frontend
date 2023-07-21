@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useContext } from "react"
 import '../../styles/NavBar.scss'
 import HomeButton from "./HomeButton"
-import { CurrentUser } from "../../context/CurrentUser"
+import { CurrentUser } from "../../context/CurrentUserContext"
 import LoginButton from "./LoginButton"
 import AccountButton from "./AccountButton"
 

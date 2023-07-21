@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useContext, useState } from "react"
-import { CurrentUser } from "../../context/CurrentUser"
+import { CurrentUser } from "../../context/CurrentUserContext"
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
