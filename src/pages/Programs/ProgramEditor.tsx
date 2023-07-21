@@ -1,11 +1,13 @@
-import React, { FunctionComponent } from "react"
+import React, { FunctionComponent, useState } from "react"
+import CodeEditor from "../../components/Code/CodeEditor"
 
 const ProgramEditor: FunctionComponent = () => {
 
-  // TODO: Create editor
+  const [ program, setProgram ] = useState<string[]>([]);
+
   return (
     <main>
-
+      <CodeEditor editMode={true} program={program} setProgram={setProgram} />
     </main>
   )
 }

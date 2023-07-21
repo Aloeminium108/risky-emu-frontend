@@ -20,8 +20,8 @@ Make and share toy programs for the RISC-V instruction set!
 > CSS preprocessor for more concise, modular styling
 #### **dotenv** - 
 > For environment variable declaration and security
-#### **nodemon** - 
-> Used to monitor the devlopment of our express based Node.js app
+#### **Monaco** - 
+> The code editor that powers VSCode, accessible in React through the @monaco-editor/react package
 #### **risc-v-emulator** -
 > Package created for this project containing the logic for the RISC-V emulator and assembler. [Click here for package homepage](https://github.com/Aloeminium108/risc-v-emulator)
 
