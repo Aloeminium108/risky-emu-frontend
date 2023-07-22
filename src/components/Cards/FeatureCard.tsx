@@ -31,7 +31,7 @@ const FeatureCard: FunctionComponent<{feature: Feature}> = (props) => {
       <p>{props.feature.program.description}</p>
 
       {currentUser?.role === 'admin' ?
-        <button onClick={() => removeFromFeatures(props.feature.program_id)}>Add to features</button> :
+        <button onClick={() => removeFromFeatures(props.feature.program_id)}>Remove from features</button> :
         <></>
       }
 
