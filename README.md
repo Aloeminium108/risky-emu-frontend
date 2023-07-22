@@ -74,7 +74,8 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ## License
 
-If applicable
+N/A, this work is copyrighted by the authors.
+The risc-v-emulator package created for this project, however, is under the permissive free software license, ISC.
 
 ## Project Status
 
