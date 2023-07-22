@@ -1,7 +1,15 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 
-export default function HomePage() {
+const HomePage: FunctionComponent = () => {
+
+  // TODO: Pull in info about featured programs
+
+  // TODO: Display featured programs
   return (
-    <></>
+    <main>
+
+    </main>
   )
 }
+
+export default HomePage

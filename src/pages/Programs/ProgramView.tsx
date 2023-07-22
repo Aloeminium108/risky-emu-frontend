@@ -1,7 +1,13 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 
-export default function ProgramView() {
+const ProgramView: FunctionComponent = () => {
+
+  // TODO: Display info about program along with comments
   return (
-    <></>
+    <main>
+
+    </main>
   )
 }
+
+export default ProgramView
