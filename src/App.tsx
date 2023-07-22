@@ -11,6 +11,8 @@ import ProgramEditor from './pages/Programs/ProgramEditor';
 import NewProgramPage from './pages/Programs/NewProgramPage';
 import EmulationView from './pages/Programs/EmulationView';
 import AllProgramsPage from './pages/Programs/AllPrograms';
+import ProgramView from './pages/Programs/ProgramView';
+import CommentProgram from './pages/Programs/CommentProgram';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/new/" element={<NewProgramPage />} />
           <Route path="/emulator/:program_id" element={<EmulationView />} />
           <Route path="/programs" element={<AllProgramsPage />} />
+          <Route path="/programs/:program_id" element={<ProgramView />} />
+          <Route path="/comment/:program_id" element={<CommentProgram />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>
