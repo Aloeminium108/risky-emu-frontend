@@ -24,3 +24,10 @@ export interface User {
   username: string,
   role: string
 }
+
+export interface Discussion {
+  discussion_id: number,
+  content: string,
+  user_id: number,
+  author: Author
+}

@@ -30,6 +30,8 @@ const ProgramCard: FunctionComponent<{program: Program}> = (props) => {
       <h3>{props.program.author.username}</h3>
       <p>{props.program.description}</p>
 
+      <button onClick={() => navigate(`/programs/${props.program.program_id}`)}>Discuss</button>
+
       {currentUser?.role === 'admin' ?
         <button onClick={() => addToFeatures(props.program.program_id)}>Add to features</button> :
         <></>
