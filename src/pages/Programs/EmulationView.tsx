@@ -12,7 +12,8 @@ const EmulationView: FunctionComponent = () => {
 
     const getProgram = async () => {
       const program = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/${program_id}`, {
-        method: 'GET'
+        method: 'GET',
+        mode: 'cors'
       })
       const { title, author, description, source_code, binary } = await program.json();
       setBinary(new Uint8Array(binary.data).buffer);

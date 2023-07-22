@@ -13,7 +13,8 @@ const ProgramEditor: FunctionComponent = () => {
 
     const getProgram = async () => {
       const program = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/${program_id}`, {
-        method: 'GET'
+        method: 'GET',
+        mode: 'cors'
       })
       const { title, author, description, source_code, binary } = await program.json();
       console.log({
@@ -36,6 +37,7 @@ const ProgramEditor: FunctionComponent = () => {
 
     const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/${program_id}`, {
       method: 'PUT',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'

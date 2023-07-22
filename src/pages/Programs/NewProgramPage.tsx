@@ -21,6 +21,7 @@ const NewProgramPage: FunctionComponent = () => {
 
     const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/programs/`, {
       method: 'POST',
+      mode: 'cors',
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'

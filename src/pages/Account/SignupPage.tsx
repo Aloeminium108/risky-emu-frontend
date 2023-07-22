@@ -21,6 +21,7 @@ const SignupPage: FunctionComponent = () => {
 
     const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/users/`, {
       method: 'POST',
+      mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
       },

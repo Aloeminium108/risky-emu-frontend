@@ -20,6 +20,7 @@ const CurrentUserProvider: FunctionComponent<{ children: ReactNode }> = (props) 
     const getLoggedInUser = async () => {
       let response = await fetch(`${process.env.REACT_APP_SERVER_URL}/authentication/profile`, {
         method: 'GET',
+        mode: 'cors',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
         }
