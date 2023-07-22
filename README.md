@@ -25,10 +25,6 @@ Make and share toy programs for the RISC-V instruction set!
 #### **risc-v-emulator** -
 > Package created for this project containing the logic for the RISC-V emulator and assembler. [Click here for package homepage](https://github.com/Aloeminium108/risc-v-emulator)
 
-## Project Usage
-
-TODO: Write Project Usage section
-
 ## Project Roadmap
 
 ### Goals
