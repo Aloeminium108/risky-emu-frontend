@@ -10,6 +10,7 @@ import AccountPage from './pages/Account/AccountPage';
 import ProgramEditor from './pages/Programs/ProgramEditor';
 import NewProgramPage from './pages/Programs/NewProgramPage';
 import EmulationView from './pages/Programs/EmulationView';
+import AllProgramsPage from './pages/Programs/AllPrograms';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/editor/:program_id" element={<ProgramEditor />} />
           <Route path="/new/" element={<NewProgramPage />} />
           <Route path="/emulator/:program_id" element={<EmulationView />} />
+          <Route path="/programs" element={<AllProgramsPage />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>

@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react"
 import { useNavigate } from "react-router"
-import { User } from "../../context/CurrentUserContext";
+import { User } from "../../types/Feature";
 
 const AccountButton: FunctionComponent<{ currentUser: User }> = (props) => {
 

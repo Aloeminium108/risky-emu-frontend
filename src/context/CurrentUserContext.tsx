@@ -1,8 +1,5 @@
 import { FunctionComponent, ReactNode, createContext, useEffect, useState } from "react";
-
-export interface User {
-  username: string
-}
+import { User } from "../types/Feature";
 
 type CurrentUserContext = {
   currentUser: User | null, 
