@@ -9,6 +9,7 @@ import SignupPage from './pages/Account/SignupPage';
 import AccountPage from './pages/Account/AccountPage';
 import ProgramEditor from './pages/Programs/ProgramEditor';
 import NewProgramPage from './pages/Programs/NewProgramPage';
+import EmulationView from './pages/Programs/EmulationView';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/account" element={<AccountPage />} />
           <Route path="/editor/:program_id" element={<ProgramEditor />} />
           <Route path="/new/" element={<NewProgramPage />} />
+          <Route path="/emulator/:program_id" element={<EmulationView />} />
         </Routes>
       </BrowserRouter>
     </CurrentUserProvider>
