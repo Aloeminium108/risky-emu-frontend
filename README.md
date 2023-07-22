@@ -54,13 +54,18 @@ Make and share toy programs for the RISC-V instruction set!
   - [ ] A
 
 **Program Editor**
-- [ ] Basic text editor
+- [x] Basic text editor
 - [ ] Syntax highlighting
 - [ ] Basic linting
 
 **Program execution view**
-- [ ] Basic view of registers and RAM
+- [x] Basic view of registers
+- [ ] Include RAM in view
 - [ ] Graphical view with memory-mapped I/O
+
+**UI/UX**
+- [ ] Cohesive styling
+- [ ] Responsive sizing and positioning
  
 ## Authors and Acknowledgment
 
